@@ -20,10 +20,13 @@ header {
     h1 {
         span {
             display: none;
+            width:0;
+            @include transition(all .4s ease);
         }
         &:hover {
             span {
                 display: inline;
+                width:auto;
             }
         }
     }
