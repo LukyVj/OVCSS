@@ -1,3 +1,4 @@
+@import "bourbon/_bourbon.scss"; // Bourbon libraries
 body {
     text-align: center;
     &:before {
@@ -27,7 +28,7 @@ header {
         &:hover {
             span {
                 display: inline-block;
-                width:5em;
+                width:auto;
                 opacity: 1;
             }
         }

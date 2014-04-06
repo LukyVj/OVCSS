@@ -332,7 +332,7 @@ header h1 span {
   transition: all 0.4s ease; }
 header h1:hover span {
   display: inline-block;
-  width: 5em;
+  width: auto;
   opacity: 1; }
 
 section article a {
