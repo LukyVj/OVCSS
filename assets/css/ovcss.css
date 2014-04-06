@@ -327,16 +327,16 @@ header h1 span {
   display: inline-block;
   width: 0;
   opacity: 0;
-  -webkit-transition: opacity 0.4s ease;
-  -moz-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease; }
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
 header h1:hover span {
   display: inline-block;
   width: auto;
   opacity: 1;
-  -webkit-transition: opacity 0.4s ease;
-  -moz-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease; }
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
 
 section article a {
   color: #2c3e50; }

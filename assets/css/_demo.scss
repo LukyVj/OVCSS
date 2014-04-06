@@ -23,14 +23,14 @@ header {
             display: inline-block;
             width:0;
             opacity: 0;
-            @include transition(opacity  .4s ease);
+            @include transition(all  .4s ease);
         }
         &:hover {
             span {
                 display: inline-block;
                 width:auto;
                 opacity: 1;
-            @include transition(opacity  .4s ease);
+            @include transition(all  .4s ease);
             }
         }
     }
