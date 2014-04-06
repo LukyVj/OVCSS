@@ -1,0 +1,31 @@
+/* ====================================================================================================
+Colors : Here you define your color palette & colorscheme, we defined some fresh colors for you
+ __________________________
+| It's all about variables |
+======================================================================================================*/
+
+
+
+// Color palette 
+$white: #eff0f2;
+$gray: #2c3e50;
+$red: #f96b6c;
+$yellow: #f2dc60;
+$green: #97e563;
+$blue: #33a2db;
+
+// Define your color variables
+
+$color-1: $white;
+$color-2: $gray;
+
+// Extend your colorscheme
+$color-1-dark:  darken($color-1, 5%);
+$color-1-light: lighten($color-1, 5%);
+
+$color-2-dark:  darken($color-2, 5%);
+$color-2-light: lighten($color-2, 5%);
+
+
+
+

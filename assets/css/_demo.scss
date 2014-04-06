@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    &:before {
+        content: '';
+        @include reset;
+        background: #eff0f2 url("../../src/images/background.png");
+        background-size: 65%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: .45;
+    }
+    a {
+        color: $color-2;
+    }
+}
+
+header {
+    h1 {
+        span {
+            display: none;
+        }
+        &:hover {
+            span {
+                display: inline;
+            }
+        }
+    }
+}
+
+section {
+    article {
+        a {
+            color: $color-2;
+        }
+    }
+}
+
+/* <pre> / <code> */
+code,
+pre {
+    font-family: monospace, serif;
+    font-size: 1em;
+    line-height: 1.1;
+}
+
+pre {
+    text-align: left;
+    font-size: .65em;
+    width: 80%;
+    max-width: 920px;
+    margin: auto;
+    border-radius: 4px;
+    background: #eff0f2;
+    box-shadow: 0 -0.1em 0.1em rgba(0, 0, 0, 0.1), 0 0.1em 0.1em white, inset 0 0 0.1em rgba(0, 0, 0, 0.4);
+}
+
+pre code {
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.6);
+    text-align: left;
+}

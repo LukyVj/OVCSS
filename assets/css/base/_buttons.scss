@@ -1,0 +1,20 @@
+/* ====================================================================================================
+Buttons : Here is the main buttons stylesheet
+======================================================================================================*/
+
+.btn{
+    text-shadow:0 .08em 0 rgba(black,.1);
+    margin-bottom:1em;
+    display:inline-block;
+    margin:auto .5em;
+    padding:.5em 1.2em;
+    border:.1em solid;
+    border-radius:45px;
+    color:$color-2;
+    text-decoration:none;
+    box-shadow:0 .08em 0 rgba(black,.1); 
+    &:hover{
+     background:$color-2;
+     color:$color-1;
+    }
+  } 

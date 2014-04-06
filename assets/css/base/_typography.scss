@@ -1,0 +1,32 @@
+/* ==========================================================================
+ OVCSS Typographic settings : 
+ ========================================================================== */
+$font-name: "TaMere";
+
+// Set your font name
+$font-path: "../fonts/bryant/";
+$font-directory: $font-path + $font-name;
+
+@font-face {
+    font-family: $font-name;
+    src: url("#{$font-directory}.eot?") format("eot"), 
+         url("#{$font-directory}.woff") format("woff"),
+         url("#{$font-directory}.svg##{$font-name}") format("svg"),
+         url("#{$font-directory}.ttf") format("truetype");
+}
+
+
+/* Typographic media queries */
+@media all and (max-width: 40em) {
+    html, body {
+        font-size: .85rem;
+        line-height: 22px;
+    }
+}
+
+@media all and (max-width: 60em) {
+    html, body {
+        font-size: .9rem;
+        line-height: 24px;
+    }
+}

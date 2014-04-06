@@ -1,0 +1,32 @@
+/* ====================================================================================================
+Base : This stylesheet will be your base, you will define the main lines of your project stylesheet.
+======================================================================================================*/
+$base-font-weight:300;
+$base-line-height:34px;
+
+@mixin reset {
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  float:left;
+}
+@mixin high{
+  @include box-sizing(border-box);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight:$base-font-weight; 
+  line-height:$base-line-height;
+}
+*{  
+  @include high();
+}
+
+html,body{
+  @include reset();
+  font-family:$font-name,Helvetica,Helvetica Neue sans-serif; // $font-name reffers to the font you use on _typography.scss
+}
+html{
+  font-size:1rem; 
+  overflow-x:hidden;
+}
