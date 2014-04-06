@@ -20,7 +20,7 @@ body {
 header {
     h1 {
         span {
-            display: none;
+            display: inline-block;
             width:0;
             opacity: 0;
             @include transition(opacity  .4s ease);
