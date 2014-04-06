@@ -1,7 +1,12 @@
-/*! OVCSS v1.0.0 | MIT License | http://lucasbonomi.com/MIT */
+//Settings, will be invisible 
+$version:"1.0.0";
+$project-name : 'OVCSS';
+$license:'MIT';
+$license-url:'http://lucasbonomi.com/MIT';
+/*! #{$project-name} v#{$version} | #{$license} License | #{$license-url} */
 
 /*
- * The following stylesheet is the main style.scss of your new OVCSS project.
+ * The following stylesheet is the main style.scss of your new #{$project-name} project.
  * The stylesheet uses normalize (http://necolas.github.io/normalize.css/) &
  * bourbon (http://bourbon.io/). 
  *
