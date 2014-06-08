@@ -1,21 +1,28 @@
 /* ==========================================================================
- OVCSS Typographic settings : 
+ OVCSS Typographic settings :
  ========================================================================== */
-$font-name: "TaMere";
+$font-name: "SourceSerifPro-Regular";
+$font-fallback: "Times new roman";
+
 
 // Set your font name
-$font-path: "../fonts/bryant/";
+$font-path: "../fonts/SourceSerifPro-Regular/";
 $font-directory: $font-path + $font-name;
 
 @font-face {
     font-family: $font-name;
-    src: url("#{$font-directory}.eot?") format("eot"), 
-         url("#{$font-directory}.woff") format("woff"),
-         url("#{$font-directory}.svg##{$font-name}") format("svg"),
-         url("#{$font-directory}.ttf") format("truetype");
+    src:url("#{$font-directory}.eot?") format("eot"),
+        url("#{$font-directory}.otf.woff") format("woff"),
+        url("#{$font-directory}.svg##{$font-name}") format("svg"),
+        url("#{$font-directory}.ttf") format("truetype");
 }
 
-
+body{
+    h1,h2,h3,h4,h5,h6{font-family: $font-name;}
+    p{
+        font-family: Helvetica;
+    }
+}
 /* Typographic media queries */
 @media all and (max-width: 40em) {
     html, body {
