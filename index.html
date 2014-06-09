@@ -12,11 +12,12 @@
 </head>
 
 <body>
-  <a href="#" class="menusign">—<br>—<br>—</a>
+  <a href="#" class="menusign"><span class="entypo-menu"></span></a>
   <div class="sidebar closed">
     <header>
       <h2>OVCSS</h2>
-      <a href="#" id="close">X</a>
+            <a href="#" id="close"><span class="entypo-cancel"></span></a>
+
     </header>
     <ul>
       <li><a href="#">something</a></li>
@@ -35,7 +36,7 @@
 
   <div class="container">
     <header>
-    <h1>O<span>rganise</span>V<span>iews</span>CSS</h1>
+    <h1>O<span>rganise</span>V<span>iews</span>CSS <span class="entypo-eye"></span> <span class="openwebicons-css3"></span></h1>
   </header>
 
   <section>
@@ -46,6 +47,7 @@
     </article>
     <article>
       <a href="https://github.com/LukyVj/OVCSS" title="" class="btn">View on github</a>
+      <a href="https://github.com/LukyVj/OVCSS" title="" class="btn">Download</a>
     </article>
 
     <article>
@@ -62,21 +64,32 @@
       |_ bourbon/_bourbon.scss
       |_ base/_settings.scss
                  |
-                 |_  <a href="#" class="inna-link">animation.scss</a>
-                 |_  <a href="#" class="inna-link">base.scss</a>
-                 |_  <a href="#" class="inna-link">buttons.scss</a>
-                 |_  <a href="#" class="inna-link">classes.scss</a>
-                 |_  <a href="#" class="inna-link">colors.scss</a>
-                 |_  <a href="#" class="inna-link">form.scss</a>
-                 |_  <a href="#" class="inna-link">icons.scss</a>
-                 |_  <a href="#" class="inna-link">mixins.scss</a>
-                 |_  <a href="#" class="inna-link">normalize.scss</a>
-                 |_  <a href="#" class="inna-link">settings.scss</a>
-                 |_  <a href="#" class="inna-link">shame.scss</a>
-                 |_  <a href="#" class="inna-link">typography.scss</a>
+                 |_  <a data-toggle="modal" href="assets/css/base/_animation.scss" data-target="#myModal" class="inna-link">animation.scss</a>
+                 |_  <a data-toggle="modal" href="assets/css/base/_base.scss" data-target="#myModal" class="inna-link">base.scss</a>
+                 |_  <a data-toggle="modal" href="assets/css/base/_buttons.scss" data-target="#myModal" class="inna-link">buttons.scss</a>
+                 |_  <a data-toggle="modal" href="assets/css/base/_classes.scss" data-target="#myModal" class="inna-link">classes.scss</a>
+                 |_  <a data-toggle="modal" href="assets/css/base/_colors.scss" data-target="#myModal" class="inna-link">colors.scss</a>
+                 |_  <a data-toggle="modal" href="assets/css/base/_form.scss" data-target="#myModal" class="inna-link">form.scss</a>
+                 |_  <a data-toggle="modal" href="assets/css/base/_icons.scss" data-target="#myModal" class="inna-link">icons.scss</a>
+                 |_  <a data-toggle="modal" href="assets/css/base/_mixins.scss" data-target="#myModal" class="inna-link">mixins.scss</a>
+                 |_  <a data-toggle="modal" href="assets/css/base/_normalize.scss" data-target="#myModal" class="inna-link">normalize.scss</a>
+                 |_  <a data-toggle="modal" href="assets/css/base/_settings.scss" data-target="#myModal" class="inna-link">settings.scss</a>
+                 |_  <a data-toggle="modal" href="assets/css/base/_shame.scss" data-target="#myModal" class="inna-link">shame.scss</a>
+                 |_  <a data-toggle="modal" href="assets/css/base/_typography.scss" data-target="#myModal" class="inna-link">typography.scss</a>
         </code>
       </pre>
     </article>
+
+<!-- Modal -->
+<div class="modal fade modal-code" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+     <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+        <pre class="inv"><code class="inv"> <div class="modal-content">
+        </div> <!-- /.modal-content --></code></pre>
+    </div> <!-- /.modal-dialog -->
+</div> <!-- /.modal -->
 
   </section>
 

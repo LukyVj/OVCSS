@@ -22,15 +22,19 @@ header {
         color: $color-theme;
         font-weight: bold;
         span {
-<<<<<<< HEAD
-=======
             font-weight: normal;
             color: #fff;
->>>>>>> 1f687ad5c1527cc04fd64f49438c8746532c674a
             display: inline-block;
             width:0;
             opacity: 0;
             @include transition(all  .4s ease);
+
+            &[class*="entypo"]{font-size: 1em;
+
+            }
+             &[class*="css3"]{
+                    font-size: .8em;
+                }
         }
         &:hover {
             span {
@@ -128,5 +132,49 @@ ul{
 
     &:hover{
         color: $red;
+    }
+}
+/* Modal
+--------------------------------------------------------------------------------------*/
+.modal{
+    background: rgba(255,255,255,.75);
+}
+.modal-header {
+    padding: 15px;
+    border-bottom: 0px solid transparent;
+    min-height: 16.4286px;
+
+    .close{
+        color: red;
+        font-size: 2em;
+    }
+}
+.modal-code{
+  width: 100%;
+  .modal-dialog{
+    width: 80%;
+    height: 80vh;
+    top: 1em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    .modal-content{
+        background: #111;
+        width: 100%;
+        padding: 0 1em;
+    }
+  }
+}
+
+/* btn
+---------------------------------------------------------------------------------------*/
+
+.btn{
+    border: 2px solid $color-theme;
+
+    &:hover{
+        background: $color-theme;
+        color: white;
     }
 }
