@@ -181,7 +181,6 @@ body p {
 /* Typographic media queries */
 @media all and (max-width: 40em) {
   html, body {
-    font-size: .85rem;
     line-height: 22px; } }
 @media all and (max-width: 60em) {
   html, body {
