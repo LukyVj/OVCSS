@@ -1,1 +1,1 @@
-$(function(){function n(){var n=$(".menusign, #close"),c=$(".sidebar");n.on("click",function(){c.toggleClass("closed")})}function c(){n()}c()}).call($(this));
+$(document).ready(function(){function n(){var n=$(".menusign, #close"),o=$(".sidebar");n.on("click",function(){o.toggleClass("closed"),$(".container").toggleClass("blurred")})}function o(){var n=$("#myModal button.close"),o=$("#myModal"),c=$("#myModal pre code .modal-content");n.on("click",function(){c.empty(),o.find("pre code").append('<div class="modal-content"></div>')})}function c(){n(),o()}c()});

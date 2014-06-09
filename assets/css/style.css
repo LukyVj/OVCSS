@@ -282,6 +282,13 @@ Classes : This library could be named helpers.css, here you will find all techni
   box-shadow: 0 0 0 transparent;
   background: transparent; }
 
+.blurred {
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-filter: blur(10px);
+  filter: blur(10px); }
+
  /* ====================================================================================================
 Basic form stylesheet : Here you define the basic style of your forms
 ======================================================================================================*/
@@ -377,6 +384,11 @@ body a {
 body > * {
   color: #ecf0f1; }
 
+.container {
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+
 header h1 {
   color: #f9276b;
   font-weight: bold; }
@@ -443,23 +455,48 @@ pre code {
   left: 0;
   top: 0;
   height: 100%;
-  width: 240px;
+  width: 260px;
   background: #1a1a1a;
-  -webkit-transition: left 0.3s ease;
-  -moz-transition: left 0.3s ease;
-  transition: left 0.3s ease; }
+  -webkit-transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
+  -moz-transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
+  transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
+  box-shadow: 0.5em 0 0 0 #f9276b; }
   .sidebar #close {
     float: right;
     margin: -1em 1em;
     text-align: right; }
   .sidebar.closed {
-    left: -240px; }
+    left: -260px;
+    box-shadow: 0 0 0 #f9276b; }
   .sidebar ul {
     padding: 0;
     margin: 0; }
     .sidebar ul li {
-      width: 100%;
-      float: left; }
+      width: 90%;
+      margin: 5px 10px;
+      float: left;
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      white-space: nowrap;
+      padding: 3px 6px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      border-radius: 4px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border: 2px solid #f9276b; }
+      .sidebar ul li:hover {
+        background: #f9276b; }
+        .sidebar ul li:hover a {
+          color: white; }
 
 /*
 -----------------------------------------------------------------------------------------*/

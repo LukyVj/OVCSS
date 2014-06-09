@@ -17,6 +17,10 @@ body {
     > *{color: $white}
 }
 
+.container{
+      @include transition(all .6s ease);
+
+}
 header {
     h1 {
         color: $color-theme;
@@ -64,7 +68,6 @@ pre {
 }
 
 
-
 /* pre code
 ----------------------------------------------------------------------*/
 pre, code{
@@ -84,7 +87,7 @@ pre code{
 }
 /* Sidebar
 -----------------------------------------------------------------------------------------*/
-$sidebar-width: 240px;
+$sidebar-width: 260px;
 .menusign{
     display: block;
     width: 10px;
@@ -101,7 +104,8 @@ top:0;
 height: 100%;
 width: $sidebar-width;
 background: darken($black, 10%);
-@include transition(left .3s ease);
+@include transition(left .3s ease, box-shadow .3s ease .2s);
+box-shadow: .5em 0 0 0 $color-theme;
 #close{
     float: right;
     margin: -1em 1em;
@@ -109,6 +113,7 @@ background: darken($black, 10%);
 }
 &.closed{
     left: -$sidebar-width;
+    box-shadow: 0 0 0 $color-theme;
 }
 
 ul{
@@ -116,8 +121,33 @@ ul{
     margin: 0;
 
     li{
-        width: 100%;
+        width: 90%;
+        margin:5px 10px;
         float: left;
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 3px 6px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+         border: 2px solid $color-theme;
+
+
+    &:hover{
+        background: $color-theme;
+        a{color: white;}
+    }
     }
 }
 }
