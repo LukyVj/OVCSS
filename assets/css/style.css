@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! OVCSS v1.0.1 | MIT License | http://lucasbonomi.com/MIT */
+/*! OVCSS v1.0.0 | MIT License | http://lucasbonomi.com/MIT */
 /*
  * The following stylesheet is the main style.scss of your new OVCSS project.
  * The stylesheet uses normalize (http://necolas.github.io/normalize.css/) &
@@ -165,8 +165,8 @@ td, th {
   padding: 0; }
 
 /* ==========================================================================
- OVCSS Settings library :
- ========================================================================== */
+OVCSS Settings library :
+========================================================================== */
 /* ==========================================================================
  OVCSS Typographic settings :
  ========================================================================== */
@@ -181,13 +181,12 @@ body p {
 /* Typographic media queries */
 @media all and (max-width: 40em) {
   html, body {
-    font-size: .85rem;
     line-height: 22px; } }
 @media all and (max-width: 60em) {
   html, body {
     font-size: .9rem;
     line-height: 24px; } }
-/* ====================================================================================================
+ /* ====================================================================================================
 Icons stylesheet :
 We use a free open source service : "WeLoveIconFonts" by  @TimPietrusky (http://weloveiconfonts.com/)
 ======================================================================================================*/
@@ -231,6 +230,12 @@ We use a free open source service : "WeLoveIconFonts" by  @TimPietrusky (http://
 [class*="zocial-"]:before {
   font-family: "zocial", sans-serif; }
 
+/* Fix OPW
+----------------------------------------------------------*/
+/* openwebicons */
+[class*="openwebicons-"]:before {
+  font-family: 'OpenWeb Icons', sans-serif; }
+
 /* ====================================================================================================
 Colors : Here you define your color palette & colorscheme, we defined some fresh colors for you
 
@@ -270,7 +275,21 @@ Classes : This library could be named helpers.css, here you will find all techni
   display: table;
   clear: both; }
 
-/* ====================================================================================================
+/* Invisible
+-------------------------------------*/
+.inv {
+  border: none;
+  box-shadow: 0 0 0 transparent;
+  background: transparent; }
+
+.blurred {
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-filter: blur(10px);
+  filter: blur(10px); }
+
+ /* ====================================================================================================
 Basic form stylesheet : Here you define the basic style of your forms
 ======================================================================================================*/
 form input {
@@ -291,7 +310,7 @@ Animations : Define CSS3 keyframes animations
 @keyframes second-animation {}
 @keyframes third-animation {}
 @keyframes fourth-animation {}
-/* Start mixins, reset ect
+ /* Start mixins, reset ect
 -------------------------------------------------------------------*/
 /* Helper : Border-radius
 -------------------------------------------------------------------*/
@@ -331,7 +350,7 @@ html {
   font-size: 29.1rem;
   overflow-x: hidden; }
 
-/*
+ /*
 
   If it’s a hack, it goes in shame.css.
   Document all hacks fully:
@@ -365,6 +384,11 @@ body a {
 body > * {
   color: #ecf0f1; }
 
+.container {
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+
 header h1 {
   color: #f9276b;
   font-weight: bold; }
@@ -377,6 +401,10 @@ header h1 {
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     transition: all 0.4s ease; }
+    header h1 span[class*="entypo"] {
+      font-size: 1em; }
+    header h1 span[class*="css3"] {
+      font-size: .8em; }
   header h1:hover span {
     display: inline-block;
     width: auto;
@@ -427,23 +455,48 @@ pre code {
   left: 0;
   top: 0;
   height: 100%;
-  width: 240px;
+  width: 260px;
   background: #1a1a1a;
-  -webkit-transition: left 0.3s ease;
-  -moz-transition: left 0.3s ease;
-  transition: left 0.3s ease; }
+  -webkit-transition: left 0.3s ease, box-shadow 0.3s ease 0.32s;
+  -moz-transition: left 0.3s ease, box-shadow 0.3s ease 0.32s;
+  transition: left 0.3s ease, box-shadow 0.3s ease 0.32s;
+  box-shadow: 0.5em 0 0 0 #f9276b; }
   .sidebar #close {
     float: right;
     margin: -1em 1em;
     text-align: right; }
   .sidebar.closed {
-    left: -240px; }
+    left: -260px;
+    box-shadow: 0 0 0 #f9276b; }
   .sidebar ul {
     padding: 0;
     margin: 0; }
     .sidebar ul li {
-      width: 100%;
-      float: left; }
+      width: 90%;
+      margin: 5px 10px;
+      float: left;
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      white-space: nowrap;
+      padding: 3px 6px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      border-radius: 4px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border: 2px solid #f9276b; }
+      .sidebar ul li:hover {
+        background: #f9276b; }
+        .sidebar ul li:hover a {
+          color: white; }
 
 /*
 -----------------------------------------------------------------------------------------*/
@@ -454,3 +507,39 @@ pre code {
   line-height: 0; }
   .inna-link:hover {
     color: #f9276b; }
+
+/* Modal
+--------------------------------------------------------------------------------------*/
+.modal {
+  background: rgba(255, 255, 255, 0.75); }
+
+.modal-header {
+  padding: 15px;
+  border-bottom: 0px solid transparent;
+  min-height: 16.4286px; }
+  .modal-header .close {
+    color: red;
+    font-size: 2em; }
+
+.modal-code {
+  width: 100%; }
+  .modal-code .modal-dialog {
+    width: 80%;
+    height: 80vh;
+    top: 1em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute; }
+    .modal-code .modal-dialog .modal-content {
+      background: #111;
+      width: 100%;
+      padding: 0 1em; }
+
+/* btn
+---------------------------------------------------------------------------------------*/
+.btn {
+  border: 2px solid #f9276b; }
+  .btn:hover {
+    background: #f9276b;
+    color: white; }

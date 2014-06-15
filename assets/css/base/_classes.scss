@@ -8,3 +8,16 @@ Classes : This library could be named helpers.css, here you will find all techni
   display: table;
   clear: both;
 }
+
+/* Invisible
+-------------------------------------*/
+.inv{
+  border: none;
+  box-shadow: 0 0 0 transparent;
+  background: transparent;
+}
+
+.blurred{
+  @include transition(all .6s ease);
+  @include filter(blur(10px));
+}

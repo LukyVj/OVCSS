@@ -11,3 +11,10 @@ $types: "brandico", "entypo", "fontawesome", "fontelico", "iconicfill", "iconics
         font-family: '#{$type}', sans-serif;
     }
 }
+
+/* Fix OPW
+----------------------------------------------------------*/
+/* openwebicons */
+[class*="openwebicons-"]:before {
+  font-family: 'OpenWeb Icons', sans-serif;
+}
