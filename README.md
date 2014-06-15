@@ -55,6 +55,6 @@ And loaded in the right order in `_settings.scss` :
     
     @import '_debug.scss';          // Debugger
  
-## OVCSS Usecase
+# OVCSS Usecase
 
- [EfficaCSS](http://lukyvj.github.io/EfficaCSS/)
+## [EfficaCSS](http://lukyvj.github.io/EfficaCSS/)
