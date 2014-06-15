@@ -3,7 +3,7 @@ OVCSS
 
 Organised Views CSS
 
-Download the framework : http://lukyvj.github.io/OVCSS/ovcss-v1.0.1.zip 
+Download the framework : http://lukyvj.github.io/OVCSS/ovcss-v1.0.1.zip
 
 
 #What is it ?
@@ -34,8 +34,8 @@ How a MVCSS works ? (v1.0.1)
                  |_  shame.scss
                  |_  typography.scss
                  |_  variables.scss
-        
-And loaded in the right order in `_settings.scss` : 
+
+And loaded in the right order in `_settings.scss` :
 
     /* ==========================================================================
      OVCSS Settings library :
@@ -52,9 +52,9 @@ And loaded in the right order in `_settings.scss` :
     @import '_animation.scss';      // Import the keyframes animations stylesheet.
     @import '_base.scss';           // Import your Base Stylesheet.
     @import '_shame.scss';          // If it's a hack, it goes in shame.css .
-    
+
     @import '_debug.scss';          // Debugger
- 
+
 # Features
 ## Grid system
 By default, OVCSS use the [lemonade.im](http://lemonade.im) grid system.
