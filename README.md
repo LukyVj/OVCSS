@@ -1,5 +1,6 @@
 OVCSS
 =====
+<img src="http://img.shields.io/badge/Version-1.0.1-green.svg">
 
 Organised Views CSS
 
