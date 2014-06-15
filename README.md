@@ -26,6 +26,7 @@ How a MVCSS works ? (v1.0.1)
                  |_  colors.scss
                  |_  debug.scss
                  |_  form.scss
+                 |_  grid.scss
                  |_  icons.scss
                  |_  images.scss
                  |_  mixins.scss
@@ -40,20 +41,23 @@ And loaded in the right order in `_settings.scss` :
     /* ==========================================================================
      OVCSS Settings library :
     ========================================================================== */
-    @import '_variables.scss';
-    @import '_mixins.scss';         // Import the mixins.
-    @import '_typography.scss';     // Import your typography stylesheet.
-    @import '_icons.scss';          // Import the icon fonts.
-    @import '_images.scss';         // Import the icon fonts.
-    @import '_colors.scss'; 	    // Import your colorscheme first.
-    @import '_buttons.scss';        // Import the Buttons stylesheet ( After the colors, the typograhy).
-    @import '_classes.scss'; 	    // Import the Classes file.
-    @import '_form.scss';           // Import the form stylesheet.
-    @import '_animation.scss';      // Import the keyframes animations stylesheet.
-    @import '_base.scss';           // Import your Base Stylesheet.
-    @import '_shame.scss';          // If it's a hack, it goes in shame.css .
+    
+        @import '_variables.scss';      // Define Main vars (root, path, ect)
+        @import '_mixins.scss';         // Import the mixins.
+        @import '_typography.scss';     // Import your typography stylesheet.
+        @import '_grid.scss';           // Import your grid system.
+        @import '_icons.scss';          // Import the icon fonts.
+        @import '_images.scss';         // Import the images
+        @import '_colors.scss';         // Import your colorscheme first.
+        @import '_buttons.scss';        // Import the Buttons stylesheet ( After the colors, the typograhy).
+        @import '_classes.scss';        // Import the Classes file.
+        @import '_form.scss';           // Import the form stylesheet.
+        @import '_animation.scss';      // Import the keyframes animations stylesheet.
+        @import '_base.scss';           // Import your Base Stylesheet.
+        @import '_shame.scss';          // If it's a hack, it goes in shame.css.
+        
+        @import '_debug.scss';          // Debugger
 
-    @import '_debug.scss';          // Debugger
 
 # Features
 ## Grid system
