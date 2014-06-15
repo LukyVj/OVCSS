@@ -1,101 +1,119 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Ovcss by LukyVj</title>
+  </head>
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <body>
+    <div id="container">
+      <div class="inner">
 
+        <header>
+          <h1>Ovcss</h1>
+          <h2>Organise Views CSS - Download the framework : http://lukyvj.github.io/OVCSS/ovcss-v1.0.1.zip    Or go to the website :</h2>
+        </header>
 
-  <title>OVCSS</title>
-</head>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/LukyVj/OVCSS/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/LukyVj/OVCSS/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/LukyVj/OVCSS" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-<body>
-<a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+        <hr>
 
+        <section id="main_content">
+          <h1>
+<a name="ovcss" class="anchor" href="#ovcss"><span class="octicon octicon-link"></span></a>OVCSS</h1>
 
-  <a href="#" class="menusign"><span class="entypo-menu"></span></a>
-  <div class="sidebar closed">
-    <header>
-      <h2>OVCSS</h2>
-            <a href="#" id="close"><span class="entypo-cancel"></span></a>
+<p>Organised Views CSS</p>
 
-    </header>
-    <ul>
-      <li><a href="#">Github project</a></li>
-      <li><a href="#">Show some love</a></li>
-      <li><a href="#">The author</a></li>
-    </ul>
-  </div>
+<p>Download the framework : <a href="http://lukyvj.github.io/OVCSS/ovcss-v1.0.1.zip">http://lukyvj.github.io/OVCSS/ovcss-v1.0.1.zip</a></p>
 
-  <div class="container">
-    <header>
-    <h1>O<span>rganise</span>V<span>iews</span>CSS <span class="entypo-eye"></span> <span class="openwebicons-css3"></span></h1>
-  </header>
+<h1>
+<a name="what-is-it-" class="anchor" href="#what-is-it-"><span class="octicon octicon-link"></span></a>What is it ?</h1>
 
-  <section>
+<p>OVCSS is a MVCSS, which means this is a Model Views Cascading Stylesheet.</p>
 
-    <article>
-      <p> <strong>OVCSS</strong>  is an Organise Views CSS system, which will help you to maintain your CSS projects</p>
-      <p> <strong>OVCSS</strong> is build with <a href="http://bourbon.io" title="Bourbon.io website">Bourbon.io</a> and <a href="http://necolas.github.io/normalize.css/" title="http://necolas.github.io/normalize.css/">Normalize.css</a> </p>
-    </article>
-    <article>
-      <a href="https://github.com/LukyVj/OVCSS" title="" class="btn">View on github</a>
-      <a href="ovcss-v0.0.2.zip" title="" class="btn">Download</a>
-    </article>
+<p>How a MVCSS works ? (v1.0.1)</p>
 
-    <article>
-      <p>OVCSS is a MVCSS, which means this is a CSS oriented Views Controller.</p>
+<pre><code>index.html
+|
+|_ ovcss.css
+  |
+  |_ base/_normalize.css
+  |_ bourbon/_bourbon.scss
+  |_ base/_settings.scss
+             |
+             |_  animation.scss
+             |_  base.scss
+             |_  buttons.scss
+             |_  classes.scss
+             |_  colors.scss
+             |_  debug.scss
+             |_  form.scss
+             |_  icons.scss
+             |_  images.scss
+             |_  mixins.scss
+             |_  normalize.scss
+             |_  settings.scss
+             |_  shame.scss
+             |_  typography.scss
+             |_  variables.scss
+</code></pre>
 
-    <h2>How a MVCSS works ?</h2>
-    <pre>
-        <code>
-    index.html
-    |
-    |_ ovcss.css
-      |
-      |_ base/_normalize.css
-      |_ bourbon/_bourbon.scss
-      |_ base/_settings.scss
-                 |
-                 |_  <a data-toggle="modal" href="https://raw.githubusercontent.com/LukyVj/OVCSS/gh-pages/framework/base/_animation.scss" data-target="#myModal" class="inna-link">animation.scss</a>
-                 |_  <a data-toggle="modal" href="assets/css/base/_base.scss" data-target="#myModal" class="inna-link">base.scss</a>
-                 |_  <a data-toggle="modal" href="assets/css/base/_buttons.scss" data-target="#myModal" class="inna-link">buttons.scss</a>
-                 |_  <a data-toggle="modal" href="assets/css/base/_classes.scss" data-target="#myModal" class="inna-link">classes.scss</a>
-                 |_  <a data-toggle="modal" href="assets/css/base/_colors.scss" data-target="#myModal" class="inna-link">colors.scss</a>
-                 |_  <a data-toggle="modal" href="assets/css/base/_form.scss" data-target="#myModal" class="inna-link">form.scss</a>
-                 |_  <a data-toggle="modal" href="assets/css/base/_icons.scss" data-target="#myModal" class="inna-link">icons.scss</a>
-                 |_  <a data-toggle="modal" href="assets/css/base/_mixins.scss" data-target="#myModal" class="inna-link">mixins.scss</a>
-                 |_  <a data-toggle="modal" href="assets/css/base/_normalize.scss" data-target="#myModal" class="inna-link">normalize.scss</a>
-                 |_  <a data-toggle="modal" href="assets/css/base/_settings.scss" data-target="#myModal" class="inna-link">settings.scss</a>
-                 |_  <a data-toggle="modal" href="assets/css/base/_shame.scss" data-target="#myModal" class="inna-link">shame.scss</a>
-                 |_  <a data-toggle="modal" href="assets/css/base/_typography.scss" data-target="#myModal" class="inna-link">typography.scss</a>
-        </code>
-      </pre>
-    </article>
+<p>And loaded in the right order in <code>_settings.scss</code> :</p>
 
-<!-- Modal -->
-<div class="modal fade modal-code" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-     <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-        <pre class="inv"><code class="inv"> <div class="modal-content">
-        </div> <!-- /.modal-content --></code></pre>
-    </div> <!-- /.modal-dialog -->
-</div> <!-- /.modal -->
+<pre><code>/* ==========================================================================
+ OVCSS Settings library :
+========================================================================== */
+@import '_variables.scss';
+@import '_mixins.scss';         // Import the mixins.
+@import '_typography.scss';     // Import your typography stylesheet.
+@import '_icons.scss';          // Import the icon fonts.
+@import '_images.scss';         // Import the icon fonts.
+@import '_colors.scss';         // Import your colorscheme first.
+@import '_buttons.scss';        // Import the Buttons stylesheet ( After the colors, the typograhy).
+@import '_classes.scss';        // Import the Classes file.
+@import '_form.scss';           // Import the form stylesheet.
+@import '_animation.scss';      // Import the keyframes animations stylesheet.
+@import '_base.scss';           // Import your Base Stylesheet.
+@import '_shame.scss';          // If it's a hack, it goes in shame.css .
 
-  </section>
+@import '_debug.scss';          // Debugger
+</code></pre>
 
+<h1>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h1>
 
-  <footer>
-    <p>Copyright 2014 <a href="http://twitter.com/lukyvj" title="Twitter profile of @lukyvj">@LukyVj</a></p>
-  </footer>
-  </div>
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.js"></script>
-  <script src="assets/js/functions.js"></script>
-</body>
+<h2>
+<a name="grid-system" class="anchor" href="#grid-system"><span class="octicon octicon-link"></span></a>Grid system</h2>
 
+<p>By default, OVCSS use the <a href="http://lemonade.im">lemonade.im</a> grid system.</p>
+
+<h1>
+<a name="ovcss-usecase" class="anchor" href="#ovcss-usecase"><span class="octicon octicon-link"></span></a>OVCSS Usecase</h1>
+
+<h2>
+<a name="efficacss" class="anchor" href="#efficacss"><span class="octicon octicon-link"></span></a><a href="http://lukyvj.github.io/EfficaCSS/">EfficaCSS</a>
+</h2>
+        </section>
+
+        <footer>
+          Ovcss is maintained by <a href="https://github.com/LukyVj">LukyVj</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
 </html>
