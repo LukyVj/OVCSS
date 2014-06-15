@@ -57,7 +57,7 @@ And loaded in the right order in `_settings.scss` :
  
 # Features
 ## Grid system
-By default, EfficaCSS use the [lemonade.im](http://lemonade.im) grid system.
+By default, OVCSS use the [lemonade.im](http://lemonade.im) grid system.
 
 # OVCSS Usecase
 
