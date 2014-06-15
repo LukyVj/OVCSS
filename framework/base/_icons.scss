@@ -1,20 +1,27 @@
  /* ====================================================================================================
-Icons stylesheet :
-We use a free open source service : "WeLoveIconFonts" by  @TimPietrusky (http://weloveiconfonts.com/)
+    Basic icons stylesheet : Here you define the style of your icons
 ======================================================================================================*/
-$types: "brandico", "entypo", "fontawesome", "fontelico", "iconicfill", "iconicstroke", "maki", "openwebicons", "typicons", "zocial";
 
-@each $type in $types {
-    @import url(http://weloveiconfonts.com/api/?family=#{$type});
-    /* #{($type)} */
-    [class*="#{$type}-"]:before {
-        font-family: '#{$type}', sans-serif;
-    }
+// Icons class
+.ico{
+  display: block;
+  &:before{
+    @include single-element();
+    @include square(1.2em, transparent);
+  }
 }
 
-/* Fix OPW
-----------------------------------------------------------*/
-/* openwebicons */
-[class*="openwebicons-"]:before {
-  font-family: 'OpenWeb Icons', sans-serif;
+// Generate icons with EfficaCSS (http://lukyvj.github.io/EfficaCSS)
+$prefix-icon: 'icon_';
+$extension-icon: '.svg';
+$icons: "check", "user", "home","cancel", "share";
+
+@each $icon in $icons {
+  .ico{
+    &[class*="ico-#{($icon)}"]{
+      &:before{
+        @include icon-background('#{($path-icons)} + #{($prefix-icon)} + #{($icon)} + #{($extension-icon)}');
+      }
+    }
+  }
 }

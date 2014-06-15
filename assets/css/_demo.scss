@@ -104,7 +104,7 @@ top:0;
 height: 100%;
 width: $sidebar-width;
 background: darken($black, 10%);
-@include transition(left .3s ease, box-shadow .3s ease .2s);
+@include transition(left .3s ease, box-shadow .3s ease .32s);
 box-shadow: .5em 0 0 0 $color-theme;
 #close{
     float: right;

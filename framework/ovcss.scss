@@ -1,6 +1,6 @@
 //Settings, will be invisible
-$version:"1.0.0";
-$project-name : 'OVCSS';
+$version:"1.0.1";
+$project-name : 'OVCSS - EfficaCSS';
 $license:'MIT';
 $license-url:'http://lucasbonomi.com/MIT';
 /*! #{$project-name} v#{$version} | #{$license} License | #{$license-url} */
@@ -20,7 +20,5 @@ $license-url:'http://lucasbonomi.com/MIT';
   @import "bourbon/_bourbon.scss"; // Bourbon libraries
   @import "base/_settings.scss";   // OVCSS Lib
 
-/* ==========================================================================
- Main style of your project  :
- ========================================================================== */
+
 

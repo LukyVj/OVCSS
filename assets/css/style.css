@@ -457,9 +457,9 @@ pre code {
   height: 100%;
   width: 260px;
   background: #1a1a1a;
-  -webkit-transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
-  -moz-transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
-  transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
+  -webkit-transition: left 0.3s ease, box-shadow 0.3s ease 0.32s;
+  -moz-transition: left 0.3s ease, box-shadow 0.3s ease 0.32s;
+  transition: left 0.3s ease, box-shadow 0.3s ease 0.32s;
   box-shadow: 0.5em 0 0 0 #f9276b; }
   .sidebar #close {
     float: right;

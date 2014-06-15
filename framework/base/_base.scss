@@ -1,8 +1,8 @@
 /* ====================================================================================================
 Base : This stylesheet will be your base, you will define the main lines of your project stylesheet.
 ======================================================================================================*/
-$base-font-weight:300;
-$base-line-height:34px;
+$base-font-weight:500;
+$base-line-height:32px;
 
 
 *{
@@ -11,9 +11,14 @@ $base-line-height:34px;
 
 html,body{
   @include reset();
-  font-family:$font-name,Helvetica,Helvetica Neue sans-serif; // $font-name reffers to the font you use on _typography.scss
+  @include font-family(#{$font-name}-light, $font-fallback, sans-serif);
 }
 html{
-  font-size:29.1rem;
   overflow-x:hidden;
 }
+
+strong{
+  @include font-family(#{$font-name}-semibold, $font-fallback, sans-serif);
+  font-weight: bold;
+}
+

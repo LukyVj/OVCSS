@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/*! OVCSS v1.0.0 | MIT License | http://lucasbonomi.com/MIT */
+/*! OVCSS - EfficaCSS v1.0.1 | MIT License | http://lucasbonomi.com/MIT */
 /*
- * The following stylesheet is the main style.scss of your new OVCSS project.
+ * The following stylesheet is the main style.scss of your new OVCSS - EfficaCSS project.
  * The stylesheet uses normalize (http://necolas.github.io/normalize.css/) &
  * bourbon (http://bourbon.io/).
  *
@@ -10,16 +10,6 @@
  Base importations :
  ========================================================================== */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-@import url(http://weloveiconfonts.com/api/?family=brandico);
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
-@import url(http://weloveiconfonts.com/api/?family=fontelico);
-@import url(http://weloveiconfonts.com/api/?family=iconicfill);
-@import url(http://weloveiconfonts.com/api/?family=iconicstroke);
-@import url(http://weloveiconfonts.com/api/?family=maki);
-@import url(http://weloveiconfonts.com/api/?family=openwebicons);
-@import url(http://weloveiconfonts.com/api/?family=typicons);
-@import url(http://weloveiconfonts.com/api/?family=zocial);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -164,84 +154,137 @@ table {
 td, th {
   padding: 0; }
 
+ /* ==========================================================================
+  OVCSS Settings library :
+
+  Settings to use with EfficaCSS
+  http://lukyvj.github.io/EfficaCSS
+ ========================================================================== */
 /* ==========================================================================
-OVCSS Settings library :
+   OVCSS Functions library :
+   Functions to use with EfficaCSS
+   http://lukyvj.github.io/EfficaCSS
 ========================================================================== */
+/*! OVCSS - EfficaCSS v1.0.1 | MIT License | http://lucasbonomi.com/MIT */
+/* font var
+-----------------------------------------------------*/
+ /* ====================================================================================================
+    Mixins for EfficaCSS
+======================================================================================================*/
+/* Start mixins, reset ect
+-------------------------------------------------------------------*/
+/* Font settings
+-------------------------------------------------------------------*/
+/* Font-face
+------------------------------------------*/
+/* regular font management
+----------------------------------------------------------------------*/
+/* Helper : Border-radius
+-------------------------------------------------------------------*/
+/* borders
+-----------------------------------------------------------------*/
+/* single element
+-----------------------------------------------------------------*/
+/* Square
+------------------------------------------------------------------*/
+/* Backgrounds
+------------------------------------------------------------------*/
+/* Shadow effects
+-------------------------------------------------------------------*/
+/* Inset outset blocks
+--------------------------------------------------------------------*/
+/* Text-shadows [ b = bottom, t = top, r = right, l = left ]
+---------------------------------------------------------------------*/
+/* Single elements
+--------------------------------------------------------------------*/
+/* Grid
+---------------------------------------------------------------*/
 /* ==========================================================================
  OVCSS Typographic settings :
- ========================================================================== */
+========================================================================== */
 @font-face {
-  font-family: "SourceSerifPro-Regular";
-  src: url("../fonts/SourceSerifPro-Regular/SourceSerifPro-Regular.eot?") format("eot"), url("../fonts/SourceSerifPro-Regular/SourceSerifPro-Regular.otf.woff") format("woff"), url("../fonts/SourceSerifPro-Regular/SourceSerifPro-Regular.svg#SourceSerifPro-Regular") format("svg"), url("../fonts/SourceSerifPro-Regular/SourceSerifPro-Regular.ttf") format("truetype"); }
-body h1, body h2, body h3, body h4, body h5, body h6 {
-  font-family: "SourceSerifPro-Regular"; }
-body p {
-  font-family: Helvetica; }
-
+  font-family: MyAwesomeFont-Regular;
+  src: url("../fonts/MyAwesomeFont/MyAwesomeFont-Regular.eot?") format("eot"), url("../fonts/MyAwesomeFont/MyAwesomeFont-Regular.woff") format("woff"), url("../fonts/MyAwesomeFont/MyAwesomeFont-Regular.svg#MyAwesomeFont-Regular") format("svg"), url("../fonts/MyAwesomeFont/MyAwesomeFont-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: MyAwesomeFont-Light;
+  src: url("../fonts/MyAwesomeFont/MyAwesomeFont-Light.eot?") format("eot"), url("../fonts/MyAwesomeFont/MyAwesomeFont-Light.woff") format("woff"), url("../fonts/MyAwesomeFont/MyAwesomeFont-Light.svg#MyAwesomeFont-Light") format("svg"), url("../fonts/MyAwesomeFont/MyAwesomeFont-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: MyAwesomeFont-Bold;
+  src: url("../fonts/MyAwesomeFont/MyAwesomeFont-Bold.eot?") format("eot"), url("../fonts/MyAwesomeFont/MyAwesomeFont-Bold.woff") format("woff"), url("../fonts/MyAwesomeFont/MyAwesomeFont-Bold.svg#MyAwesomeFont-Bold") format("svg"), url("../fonts/MyAwesomeFont/MyAwesomeFont-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: MyAwesomeFont-Semibold;
+  src: url("../fonts/MyAwesomeFont/MyAwesomeFont-Semibold.eot?") format("eot"), url("../fonts/MyAwesomeFont/MyAwesomeFont-Semibold.woff") format("woff"), url("../fonts/MyAwesomeFont/MyAwesomeFont-Semibold.svg#MyAwesomeFont-Semibold") format("svg"), url("../fonts/MyAwesomeFont/MyAwesomeFont-Semibold.ttf") format("truetype"); }
 /* Typographic media queries */
 @media all and (max-width: 40em) {
   html, body {
-    font-size: .85rem;
     line-height: 22px; } }
 @media all and (max-width: 60em) {
   html, body {
-    font-size: .9rem;
     line-height: 24px; } }
  /* ====================================================================================================
-Icons stylesheet :
-We use a free open source service : "WeLoveIconFonts" by  @TimPietrusky (http://weloveiconfonts.com/)
+    Basic icons stylesheet : Here you define the style of your icons
 ======================================================================================================*/
-/* brandico */
-[class*="brandico-"]:before {
-  font-family: "brandico", sans-serif; }
+.ico {
+  display: block; }
+  .ico:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    background: transparent; }
 
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: "entypo", sans-serif; }
+.ico[class*="ico-check"]:before {
+  background: url("../images/svg/svg_iconset/ + icon_ + check + .svg") no-repeat center center;
+  background-size: contain; }
 
-/* fontawesome */
-[class*="fontawesome-"]:before {
-  font-family: "fontawesome", sans-serif; }
+.ico[class*="ico-user"]:before {
+  background: url("../images/svg/svg_iconset/ + icon_ + user + .svg") no-repeat center center;
+  background-size: contain; }
 
-/* fontelico */
-[class*="fontelico-"]:before {
-  font-family: "fontelico", sans-serif; }
+.ico[class*="ico-home"]:before {
+  background: url("../images/svg/svg_iconset/ + icon_ + home + .svg") no-repeat center center;
+  background-size: contain; }
 
-/* iconicfill */
-[class*="iconicfill-"]:before {
-  font-family: "iconicfill", sans-serif; }
+.ico[class*="ico-cancel"]:before {
+  background: url("../images/svg/svg_iconset/ + icon_ + cancel + .svg") no-repeat center center;
+  background-size: contain; }
 
-/* iconicstroke */
-[class*="iconicstroke-"]:before {
-  font-family: "iconicstroke", sans-serif; }
+.ico[class*="ico-share"]:before {
+  background: url("../images/svg/svg_iconset/ + icon_ + share + .svg") no-repeat center center;
+  background-size: contain; }
 
-/* maki */
-[class*="maki-"]:before {
-  font-family: "maki", sans-serif; }
+ /* ====================================================================================================
+    Basic images stylesheet : Here you define the style of your images
+======================================================================================================*/
+.gallery-item {
+  display: block;
+  width: 6em;
+  height: 6em;
+  background: transparent; }
 
-/* openwebicons */
-[class*="openwebicons-"]:before {
-  font-family: "openwebicons", sans-serif; }
+.gallery-item[class*="gallery-The_beach"] {
+  background: #cccccc url("../images/my_holidays/ + holidays_2014_ + The_beach + .png") no-repeat center center;
+  background-size: cover; }
 
-/* typicons */
-[class*="typicons-"]:before {
-  font-family: "typicons", sans-serif; }
+.gallery-item[class*="gallery-The_hotel"] {
+  background: #cccccc url("../images/my_holidays/ + holidays_2014_ + The_hotel + .png") no-repeat center center;
+  background-size: cover; }
 
-/* zocial */
-[class*="zocial-"]:before {
-  font-family: "zocial", sans-serif; }
+.gallery-item[class*="gallery-Sunset"] {
+  background: #cccccc url("../images/my_holidays/ + holidays_2014_ + Sunset + .png") no-repeat center center;
+  background-size: cover; }
 
-/* Fix OPW
-----------------------------------------------------------*/
-/* openwebicons */
-[class*="openwebicons-"]:before {
-  font-family: 'OpenWeb Icons', sans-serif; }
+.gallery-item[class*="gallery-Safari"] {
+  background: #cccccc url("../images/my_holidays/ + holidays_2014_ + Safari + .png") no-repeat center center;
+  background-size: cover; }
+
+.gallery-item[class*="gallery-Mountain"] {
+  background: #cccccc url("../images/my_holidays/ + holidays_2014_ + Mountain + .png") no-repeat center center;
+  background-size: cover; }
 
 /* ====================================================================================================
 Colors : Here you define your color palette & colorscheme, we defined some fresh colors for you
-
-
-Some colors were already defined
 ======================================================================================================*/
 /* Shortcuts
 --------------------------------------------------------------------------------------------------*/
@@ -250,38 +293,24 @@ Some colors were already defined
 /* ====================================================================================================
 Buttons : Here is the main buttons stylesheet
 ======================================================================================================*/
-/*
-Example :
-
-  .btn-primary,
-  .btn-primary:hover,
-  .btn-primary:focus,
-  .btn-primary:active,
-  .btn-primary.active,
-  .open .dropdown-toggle.btn-primary {
-    color: $grey;
-    background-color: $white;
-    border-color: darken($white, 20%);
-    text-shadow: 0 0 0;
-  }
-
-*/
 /* ====================================================================================================
 Classes : This library could be named helpers.css, here you will find all technical classes
 (ex : .hide, .clearfix, .fix )
 ======================================================================================================*/
+/* clearfix
+-------------------------------------------*/
 .clearfix:before,
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
 
-/* Invisible
--------------------------------------*/
-.inv {
-  border: none;
-  box-shadow: 0 0 0 transparent;
-  background: transparent; }
+/* Hide
+-------------------------------------------*/
+.hide {
+  display: none;
+  opacity: 0;
+  visibility: hidden; }
 
  /* ====================================================================================================
 Basic form stylesheet : Here you define the basic style of your forms
@@ -298,28 +327,11 @@ form input {
     color: black; }
 
 /* ====================================================================================================
-Animations : Define CSS3 keyframes animations
+  Animations : Define CSS3 keyframes animations
 ======================================================================================================*/
-@keyframes first-animation {}
-@keyframes second-animation {}
-@keyframes third-animation {}
-@keyframes fourth-animation {}
- /* Start mixins, reset ect
--------------------------------------------------------------------*/
-/* Helper : Border-radius
--------------------------------------------------------------------*/
-/* Helper : Borders
--------------------------------------------------------------------*/
-/*
------------------------------------------------------------------*/
-/* Font
------------------------------------------------------------------*/
-/* borders
------------------------------------------------------------------*/
-/* single element
------------------------------------------------------------------*/
-/* Square
-------------------------------------------------------------------*/
+@-webkit-keyframes animation-name {}
+@-moz-keyframes animation-name {}
+@keyframes animation-name {}
 /* ====================================================================================================
 Base : This stylesheet will be your base, you will define the main lines of your project stylesheet.
 ======================================================================================================*/
@@ -329,8 +341,8 @@ Base : This stylesheet will be your base, you will define the main lines of your
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 300;
-  line-height: 34px; }
+  font-weight: 500;
+  line-height: 32px; }
 
 html, body {
   width: 100%;
@@ -338,11 +350,14 @@ html, body {
   margin: 0;
   padding: 0;
   float: left;
-  font-family: "SourceSerifPro-Regular", Helvetica, Helvetica Neue sans-serif; }
+  font-family: MyAwesomeFont-light, "Helvetica", sans-serif; }
 
 html {
-  font-size: 29.1rem;
   overflow-x: hidden; }
+
+strong {
+  font-family: MyAwesomeFont-semibold, "Helvetica", sans-serif;
+  font-weight: bold; }
 
  /*
 
@@ -357,153 +372,16 @@ html {
   Even better, get a tech-debt story in which you can dedicate actual sprint time to it.
 
 */
+/* ====================================================================================================
+    Debug file, to add and edit when you debug your project
+
+    To activate the debug, just add a data-debug attribute to the HTML element <html data-debug="true">
+======================================================================================================*/
+html[data-debug="true"] a {
+  color: red; }
+html[data-debug="true"] img {
+  border: 1px solid yellow; }
+
 /* ==========================================================================
  Main style of your project  :
  ========================================================================== */
-body:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  float: left;
-  background: #333333;
-  background-size: 65%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1; }
-body a {
-  color: #f9276b; }
-body > * {
-  color: #ecf0f1; }
-
-header h1 {
-  color: #f9276b;
-  font-weight: bold; }
-  header h1 span {
-    font-weight: normal;
-    color: #fff;
-    display: inline-block;
-    width: 0;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    transition: all 0.4s ease; }
-    header h1 span[class*="entypo"] {
-      font-size: 1em; }
-    header h1 span[class*="css3"] {
-      font-size: .8em; }
-  header h1:hover span {
-    display: inline-block;
-    width: auto;
-    opacity: 1;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    transition: all 0.4s ease; }
-
-section article a {
-  color: #f9276b; }
-
-/* <pre> / <code> */
-code,
-pre {
-  font-family: monospace, serif;
-  font-size: 1em;
-  line-height: 1.1; }
-
-/* pre code
-----------------------------------------------------------------------*/
-pre, code {
-  padding: 2px 4px;
-  font-size: 90%;
-  color: white;
-  background-color: #666666;
-  border: 2px solid #262626;
-  white-space: nowrap;
-  border-radius: 4px;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); }
-
-pre code {
-  border: none; }
-
-/* Sidebar
------------------------------------------------------------------------------------------*/
-.menusign {
-  display: block;
-  width: 10px;
-  line-height: .3;
-  font-size: 2em;
-  margin: .5em; }
-  .menusign br {
-    height: 0; }
-
-.sidebar {
-  position: fixed;
-  z-index: 9999999;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 240px;
-  background: #1a1a1a;
-  -webkit-transition: left 0.3s ease;
-  -moz-transition: left 0.3s ease;
-  transition: left 0.3s ease; }
-  .sidebar #close {
-    float: right;
-    margin: -1em 1em;
-    text-align: right; }
-  .sidebar.closed {
-    left: -240px; }
-  .sidebar ul {
-    padding: 0;
-    margin: 0; }
-    .sidebar ul li {
-      width: 100%;
-      float: left; }
-
-/*
------------------------------------------------------------------------------------------*/
-.inna-link {
-  display: inline;
-  padding: 0;
-  margin: 0;
-  line-height: 0; }
-  .inna-link:hover {
-    color: #f9276b; }
-
-/* Modal
---------------------------------------------------------------------------------------*/
-.modal {
-  background: rgba(255, 255, 255, 0.75); }
-
-.modal-header {
-  padding: 15px;
-  border-bottom: 0px solid transparent;
-  min-height: 16.4286px; }
-  .modal-header .close {
-    color: red;
-    font-size: 2em; }
-
-.modal-code {
-  width: 100%; }
-  .modal-code .modal-dialog {
-    width: 80%;
-    height: 80vh;
-    top: 1em;
-    left: 0;
-    right: 0;
-    margin: auto;
-    position: absolute; }
-    .modal-code .modal-dialog .modal-content {
-      background: #111;
-      width: 100%;
-      padding: 0 1em; }
-
-/* btn
----------------------------------------------------------------------------------------*/
-.btn {
-  border: 2px solid #f9276b; }
-  .btn:hover {
-    background: #f9276b;
-    color: white; }

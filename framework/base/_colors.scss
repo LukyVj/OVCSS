@@ -1,43 +1,19 @@
 /* ====================================================================================================
 Colors : Here you define your color palette & colorscheme, we defined some fresh colors for you
-
-
-Some colors were already defined
 ======================================================================================================*/
 
-$purple: #3D3077;
-
-$red: #F9276B;
-$red-second: lighten(#F9276B, 5%);
-$grey: #7f8c8d;
-$white: #ecf0f1;
-$blue: #428BCA;
-$blue-second: #1B98F4;
-$blue-third: #77C9F1;
-$black: #333;
-
-
-$light-purple: lighten($purple, 15%);
-$light-blue: saturate(lighten($blue, 15%), 5%);
-$dark-background: #2c3e50;
+$red: #e74c3c;
+$green: #2ecc71;
+$blue: #3498db;
 
 /* Shortcuts
 --------------------------------------------------------------------------------------------------*/
-$bb: $black;
-$p: $purple;
 $r: $red;
-$r-s: $red-second;
-$g: $grey;
-$w: $white;
+$g: $green;
 $b: $blue;
-$b-s: $blue-second;
-$b-t: $blue-third;
-$l-p: $light-purple;
-$l-b: $light-blue;
-$d-b: $dark-background;
-
-
 
 /* Theme
 --------------------------------------------------------------------------------------------------*/
+
 $color-theme: $r;
+$ct: $color-theme;
