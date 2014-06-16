@@ -58,7 +58,8 @@ And loaded in the right order in `_settings.scss` :
         
         @import '_debug.scss';          // Debugger
 
-
+# Usage 
+<img src="http://i.imgur.com/NeSqpCM.png" />
 # Features
 ## Grid system
 By default, OVCSS use the [lemonade.im](http://lemonade.im) grid system.
